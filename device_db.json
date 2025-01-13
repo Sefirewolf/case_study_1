@@ -1,0 +1,1 @@
+{"_default": {"1": {"device_id": 1, "device_name": "Laptop_1", "resp_user": {"user_id": "anton@example.com", "user_name": "Anton Angerer"}}, "2": {"device_id": 2, "device_name": "Laptop_2", "resp_user": {"user_id": "bernhard@example.com", "user_name": "Bernhard Berger"}}}}

@@ -1,7 +1,6 @@
 from datetime import datetime
 
 
-
 #Definierung der Klassen
 class User:
 
@@ -14,7 +13,15 @@ class User:
     #wiedergabe der Attribute
     def __repr__(self):
 
-        return f"User(id = {self.user_id}, name = '{self.user_name}')"   
+        return f"User(id = {self.user_id}, name = '{self.user_name}')"
+
+    def add_to_db(self):
+        
+        return {
+            "user_id": self.user_id,
+            "user_name": self.user_name
+        }
+
 
 
 class Device:
@@ -35,3 +42,12 @@ class Device:
     def __creation_date(self):
 
         return f"Erstellung: '{self.creation_date}'"
+    
+    def add_to_db(self):
+        
+        return {
+            "device_id": self.device_id,
+            "device_name": self.device_name,
+            "resp_user": self.responsible_user
+        }
+
